@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: none;
+    }
+
+    .form-group textarea {
+      height: 100px;
+    }
+
+    .form-group button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #5a00b5;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+    
+    .bottom-menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color:   #5a00b5;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      z-index: 999;
+    }
+
+    .bottom-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Buy Your passcode</h2>
+    <p>Please provide your details, note that your passcode will be sent to your email </p>
+    <form action="payment.html">
+        
+        
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Amount:</label>
+       <input type="text" value="₦5,500" disabled>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+     <p>Avoid getting scammed buy the tag from the app, we use your IP address to process your Transaction, getting your tag from a
+      vendor apart from the a is not advisable</p>
+      <P>We will not attend to you if you come back and tell us your app is not working... it a simple logic, buy your password from the app for it to work and get a 
+        access to our support team when you have issues
+      </P>
+  <div class="bottom-menu">
+    <a href="">Home</a>
+    <a href="about.html">About</a>
+    <a href="buy.html">Buy</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <script>
+    document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });
+</script>
+
